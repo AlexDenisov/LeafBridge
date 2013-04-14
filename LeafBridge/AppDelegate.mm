@@ -19,12 +19,10 @@ using namespace LB;
 
 @implementation AppDelegate
 {
-    BaseViewController *_viewController;
     Window *_window;
 }
 
 - (void)dealloc {
-    delete _viewController;
     delete _window;
 }
 
@@ -43,8 +41,6 @@ using namespace LB;
     
     _window = new Window(Screen().bounds());
     _window->setRootViewController(tabbar);
-    
-    _viewController = tabbar;
     
     _window->makeKeyAndVisible();
     return YES;
