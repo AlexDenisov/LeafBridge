@@ -23,6 +23,7 @@ namespace LB {
     
     void TabbarController::viewDidLoad()
     {
+        NSLog(@"ViewDidLoad");
     }
     
     TabbarController::operator UIViewController *() const

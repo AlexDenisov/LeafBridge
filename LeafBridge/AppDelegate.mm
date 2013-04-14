@@ -34,7 +34,7 @@ using namespace LB;
         new LeftViewController(@"ViewController"),
         new RightViewController(@"ViewController")
     });
-    
+
     _window = new Window(Screen().bounds());
     _window->setRootViewController(tabbar);
     
