@@ -154,6 +154,7 @@
 		CA62543A171AB00E00E6D484 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				CA62548C171B2AFF00E6D484 /* View */,
 				CA625473171B008300E6D484 /* BaseViewController */,
 				CA625463171AFD3D00E6D484 /* TabbarController */,
 				CA625462171AFD3700E6D484 /* Screen */,
@@ -217,6 +218,13 @@
 				CA625474171B00BF00E6D484 /* BaseViewController.mm */,
 			);
 			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		CA62548C171B2AFF00E6D484 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

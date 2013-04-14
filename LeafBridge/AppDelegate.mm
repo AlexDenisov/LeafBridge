@@ -30,19 +30,16 @@ using namespace LB;
 {    
     TabbarController *tabbar = new TabbarController();
     
-    ViewController *vc1 = new LeftViewController(@"ViewController");
-    ViewController *vc2 = new RightViewController(@"ViewController");
-    
-    std::vector<BaseViewController *> controllers;
-    controllers.push_back(vc1);
-    controllers.push_back(vc2);
-    
-    tabbar->setViewControllers(controllers);
+    tabbar->setViewControllers({
+        new LeftViewController(@"ViewController"),
+        new RightViewController(@"ViewController")
+    });
     
     _window = new Window(Screen().bounds());
     _window->setRootViewController(tabbar);
     
     _window->makeKeyAndVisible();
+    
     return YES;
 }
 
