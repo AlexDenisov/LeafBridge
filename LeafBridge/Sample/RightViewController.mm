@@ -7,6 +7,8 @@
 //
 
 #include "RightViewController.h"
+#include "Rect.h"
+#include "View.h"
 
 RightViewController::RightViewController(NSString *nibname, NSBundle *bundle)
 : LB::ViewController(nibname, bundle) {}
@@ -15,8 +17,8 @@ RightViewController::RightViewController(NSString *nibname, NSBundle *bundle)
 void RightViewController::viewDidLoad()
 {
     LB::ViewController::viewDidLoad();
-    UIViewController *vc = *this;
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 14, 23, 344)];
-    view.backgroundColor = [UIColor greenColor];
-    [vc.view addSubview:view];
+    
+    LB::View *view = new LB::View(LB::Rect(CGRectMake(50, 14, 23, 160)));
+    view->setBackgroundColor([UIColor greenColor]);
+    this->view()->addSubview(view);
 }

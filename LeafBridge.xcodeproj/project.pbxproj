@@ -26,6 +26,7 @@
 		CA625476171B00BF00E6D484 /* BaseViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA625474171B00BF00E6D484 /* BaseViewController.mm */; };
 		CA625479171B023D00E6D484 /* ViewControllerProxy.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA625478171B023D00E6D484 /* ViewControllerProxy.mm */; };
 		CA62547F171B127000E6D484 /* RightViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA62547D171B127000E6D484 /* RightViewController.mm */; };
+		CAD9782A171C8A8A00C370DE /* View.mm in Sources */ = {isa = PBXBuildFile; fileRef = CAD97828171C8A8A00C370DE /* View.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,8 @@
 		CA625478171B023D00E6D484 /* ViewControllerProxy.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewControllerProxy.mm; sourceTree = "<group>"; };
 		CA62547D171B127000E6D484 /* RightViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RightViewController.mm; sourceTree = "<group>"; };
 		CA62547E171B127000E6D484 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		CAD97828171C8A8A00C370DE /* View.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = View.mm; sourceTree = "<group>"; };
+		CAD97829171C8A8A00C370DE /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +226,8 @@
 		CA62548C171B2AFF00E6D484 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CAD97829171C8A8A00C370DE /* View.h */,
+				CAD97828171C8A8A00C370DE /* View.mm */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -304,6 +309,7 @@
 				CA625476171B00BF00E6D484 /* BaseViewController.mm in Sources */,
 				CA625479171B023D00E6D484 /* ViewControllerProxy.mm in Sources */,
 				CA62547F171B127000E6D484 /* RightViewController.mm in Sources */,
+				CAD9782A171C8A8A00C370DE /* View.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +432,7 @@
 				CA625437171AAFD600E6D484 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

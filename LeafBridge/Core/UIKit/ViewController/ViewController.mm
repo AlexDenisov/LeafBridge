@@ -8,10 +8,12 @@
 
 #include "ViewController.h"
 #include "ViewControllerProxy.h"
+#include "View.h"
 
 namespace LB {
     ViewController::ViewController(NSString *nibName, NSBundle *bundle)
     {
+//        _view = nullptr;
         this->init(nibName, bundle);
     }
     
@@ -29,7 +31,21 @@ namespace LB {
     }
     
     void ViewController::viewDidLoad() {}
-} 
+    
+    void ViewController::setView(LB::View *view)
+    {
+        _view = view;
+        _viewController.view = *view;
+    }
+    
+    View *ViewController::view()
+    {
+        if (_view == nullptr) {
+            _view = new View(_viewController.view);
+        }
+        return _view;
+    }
+}
 
 
 

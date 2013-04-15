@@ -7,6 +7,7 @@
 //
 
 #include "LeftViewController.h"
+#include "View.h"
 
 LeftViewController::LeftViewController(NSString *nibname, NSBundle *bundle)
 : LB::ViewController(nibname, bundle) {}
@@ -15,8 +16,8 @@ LeftViewController::LeftViewController(NSString *nibname, NSBundle *bundle)
 void LeftViewController::viewDidLoad()
 {
     LB::ViewController::viewDidLoad();
-    UIViewController *vc = *this;
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 14, 23, 344)];
-    view.backgroundColor = [UIColor redColor];
-    [vc.view addSubview:view];
+    
+    LB::View *view = new LB::View(LB::Rect(CGRectMake(0, 14, 23, 344)));
+    view->setBackgroundColor([UIColor redColor]);
+    this->view()->addSubview(view);
 }

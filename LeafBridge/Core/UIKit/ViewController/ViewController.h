@@ -10,10 +10,14 @@
 
 #import "BaseViewController.h"
 
-namespace LB { 
+namespace LB {
+    class View;
+    
     class ViewController : public BaseViewController {
     private:
         UIViewController *_viewController;
+    protected:
+        View *_view;
         
         void init(NSString *nibname = nil, NSBundle *bundle = nil);
     public:
@@ -23,5 +27,8 @@ namespace LB {
         /*virtual*/ void viewDidLoad();
         
         /*virtual*/ operator UIViewController *() const;
+        
+        View *view();
+        void setView(View *view);
     };
 } 
