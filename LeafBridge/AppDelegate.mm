@@ -26,8 +26,9 @@ using namespace LB;
     delete _window;
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{    
+- (BOOL)application:(UIApplication *)application
+        didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     TabbarController *tabbar = new TabbarController();
     
     tabbar->setViewControllers({

@@ -11,7 +11,7 @@
 #include "ViewControllerProxy.h"
 #include "ViewController.h"
 
-static void class_swizzleMehods(Class receiver, SEL origin, SEL replace)
+static void class_swizzleMethods(Class receiver, SEL origin, SEL replace)
 {
 
     Method origMethod = class_getInstanceMethod(receiver, origin);
@@ -44,10 +44,9 @@ namespace LB {
                         proxyIMP,
                         NULL);
         if (result) {
-            class_swizzleMehods([sender class], @selector(viewDidLoad), proxySEL);
+            class_swizzleMethods([sender class], @selector(viewDidLoad), proxySEL);
         }
     }
-    
     
     void ViewControllerProxy::viewDidLoadProxy(id sender, SEL cmd)
     {

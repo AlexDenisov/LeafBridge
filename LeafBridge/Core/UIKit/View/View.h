@@ -13,8 +13,6 @@
 #include "Rect.h"
 
 namespace LB {
-    class Rect;
-    
     class View {
     private:
         UIView *_view;
