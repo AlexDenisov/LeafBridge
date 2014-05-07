@@ -15,6 +15,8 @@
 #import "LeftViewController.h"
 #import "RightViewController.h"
 
+#import "string.h"
+
 using namespace LB;
 
 @implementation AppDelegate
@@ -29,6 +31,13 @@ using namespace LB;
 - (BOOL)application:(UIApplication *)application
         didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    lb::string s("hello");
+    NSString *ns = s;
+    const char *cs = s;
+    std::string ss = s;
+    NSLog(@"%@ %s %s", ns, cs, ss.c_str());
+    
+    return YES;
     TabbarController *tabbar = new TabbarController();
     
     tabbar->setViewControllers({

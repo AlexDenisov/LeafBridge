@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46FF8107191A607900881B25 /* string.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46FF8105191A607900881B25 /* string.mm */; };
 		CA625416171AAFD600E6D484 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA625415171AAFD600E6D484 /* UIKit.framework */; };
 		CA625418171AAFD600E6D484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA625417171AAFD600E6D484 /* Foundation.framework */; };
 		CA62541A171AAFD600E6D484 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA625419171AAFD600E6D484 /* CoreGraphics.framework */; };
@@ -30,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46FF8105191A607900881B25 /* string.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = string.mm; sourceTree = "<group>"; };
+		46FF8106191A607900881B25 /* string.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = string.h; sourceTree = "<group>"; };
 		CA625412171AAFD600E6D484 /* LeafBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeafBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA625415171AAFD600E6D484 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CA625417171AAFD600E6D484 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46FF8104191A606000881B25 /* ADT */ = {
+			isa = PBXGroup;
+			children = (
+				46FF8106191A607900881B25 /* string.h */,
+				46FF8105191A607900881B25 /* string.mm */,
+			);
+			path = ADT;
+			sourceTree = "<group>";
+		};
 		CA625409171AAFD600E6D484 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +149,7 @@
 		CA625438171AAFE400E6D484 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				46FF8104191A606000881B25 /* ADT */,
 				CA625453171AD8EB00E6D484 /* Geometry */,
 				CA62543A171AB00E00E6D484 /* UIKit */,
 			);
@@ -310,6 +323,7 @@
 				CA625479171B023D00E6D484 /* ViewControllerProxy.mm in Sources */,
 				CA62547F171B127000E6D484 /* RightViewController.mm in Sources */,
 				CAD9782A171C8A8A00C370DE /* View.mm in Sources */,
+				46FF8107191A607900881B25 /* string.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
